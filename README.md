@@ -2,7 +2,7 @@
 created: 2022-03-16T16:39:54 (UTC +01:00)
 tags: []
 source: https://simplonline.co/briefs/9cd039d0-0744-4262-8510-dfad587a9591
-author: 
+author: Gwenn-LR
 ltex: language="fr"
 ---
 
@@ -19,7 +19,7 @@ Développer un modèle IA pour la reconnaissance des Digits provenant d'un enreg
 
 ## Contexte du projet
 
-Cet atelier a pour objectif de manipuler les différentes techniques de classification supervisée sous Python, comme KNN, SVM, Foret Aléatoire, XGBoos et autre.
+Cet atelier a pour objectif de manipuler les différentes techniques de classification supervisée sous Python, comme KNN, SVM, Foret Aléatoire, XGBoost et autre.
 
 Dans cet atelier, nous appliquons apprentissage supervisé pour reconnaitre les Digits à partir d’un enregistrement audio.
 
@@ -34,7 +34,7 @@ Dans cet atelier, nous appliquons apprentissage supervisé pour reconnaitre les 
 - Intégration de ce modèle dans une application pour test temps réel.
 
 
-## Phases de l'Atelir
+## Phases de l'Atelier
 
 ### Partie 1 : Base de données, Analyse, Prétraitement et Préparation
 
@@ -82,5 +82,13 @@ Un dépôt GitHub avec :
 - [x] Un Notebook bien structuré/organisé qui réalise les différentes étapes de ce projet.
 - [x] Un Notebook de l'application adaptée qui affiche le résultat d'un Test Temps Réel.
 - [x] Un Readme.md pour mettre en avant votre projet.
-- [ ] Un compte rendu PDF.
+- [x] Un compte rendu PDF.
 - [x] Les DataSets et les fichiers nécessaires.
+
+# Travail à réaliser (après clarification)
+
+- [ ] Avant GridSearch, entraîner différents modèles puis étudier corrélation avec ```sns.pairplot(data, hue="Target", corner=True)```
+- [ ] Etudier les données les plus pertinentes en fonction des classes
+    - [ ] Sélectionner colonnes pertinentes : Features Selection de sklearn (GenericUnivariateSelect() et/ou SelectKBest())
+    - [ ] Réduction de données : NeighborhoodComponentsAnalysis
+    - [ ] Sélection de lignes : Instance Selection
